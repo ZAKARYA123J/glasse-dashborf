@@ -16,7 +16,7 @@ export const meets = [
   {
     img: "/images/svg/dc.svg",
     title: "Background research",
-    date: "01 Nov 2021",
+    date: "01 Nov 2021",  
     meet: "Google meeting",
   },
   {

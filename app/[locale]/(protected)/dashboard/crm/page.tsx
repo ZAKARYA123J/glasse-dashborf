@@ -14,7 +14,7 @@ const CrmPage = () => {
     <div className="space-y-5">
       <div className="grid grid-cols-12 gap-5">
         <div className="col-span-12 lg:col-span-8 space-y-5">
-          <Card>
+          {/* <Card>
             <CardContent className="p-4">
               <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-3">
                 <Card className="bg-warning/20 relative shadow-none border-none">
@@ -143,7 +143,7 @@ const CrmPage = () => {
                 </Card>
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
           {/* <Card>
             <CardHeader className="flex-row flex-wrap gap-2">
               <CardTitle className="flex-1 whitespace-nowrap">
@@ -157,7 +157,7 @@ const CrmPage = () => {
           </Card> */}
         </div>
         <div className="col-span-12 lg:col-span-4 space-y-5">
-          <Card>
+          {/* <Card>
             <CardHeader className="flex-row gap-3">
               <CardTitle className="flex-1">{t("campaigns")}</CardTitle>
               <DashboardDropdown />
@@ -177,7 +177,7 @@ const CrmPage = () => {
                 ))}
               </ul>
             </CardContent>
-          </Card>
+          </Card> */}
 
           {/* <Card>
             <CardHeader className="flex-row gap-3">
