@@ -49,8 +49,7 @@ const ProjectGrid = async () => {
                                                 key={`user-${index}`}
                                                 className="h-6 w-6 shadow-none border-none bg-transparent hover:bg-transparent"
                                             >
-                                                <AvatarImage src={user.image} />
-                                                <AvatarFallback> {user.name.charAt(0) + user.name.charAt(1)}</AvatarFallback>
+                                                
                                             </Avatar>
                                         ))
                                     }
