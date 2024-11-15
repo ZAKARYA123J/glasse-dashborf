@@ -26,7 +26,7 @@ const SearchBar = () => {
 
     return (
         <AnimatePresence>
-            <motion.div
+            {/* <motion.div
                 key={(config.collapsed && !hovered) ? "collapsed" : "expanded"}
                 initial={{ scale: 0.9 }}
                 animate={{ scale: 1 }}
@@ -41,7 +41,7 @@ const SearchBar = () => {
                         <Input type="text" placeholder="Search Menu..." className='bg-transparent  dark:border-secondary dark:placeholder-white/80 dark:focus:border-secondary dark:text-white' />
                     </InputGroup>
                 }
-            </motion.div>
+            </motion.div> */}
         </AnimatePresence>
 
     )

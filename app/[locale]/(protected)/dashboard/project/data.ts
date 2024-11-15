@@ -61,48 +61,48 @@ export const tasks = [
     title: "Amet minim mollit non deserunt ullam.",
   }]
 
-  export const messagesData = [
-    {
-      title: "Wade Warren",
-      desc: "Hi! How are you doing?.....",
-      active: true,
-      hasnotifaction: true,
-      notification_count: 1,
-      image: "/images/users/user-1.jpg"
-    },
-    {
-      title: "Savannah Nguyen",
-      desc: "Hi! How are you doing?.....",
-      active: false,
-      hasnotifaction: false,
-      image:"/images/users/user-2.jpg"
-    },
-    {
-      title: "Ralph Edwards",
-      desc: "Hi! How are you doing?.....",
-      active: false,
-      hasnotifaction: true,
-      notification_count: 8,
-      image: "/images/users/user-3.jpg"
-    },
-    {
-      title: "Cody Fisher",
-      desc: "Hi! How are you doing?.....",
-      active: true,
-      hasnotifaction: false,
-      image: "/images/users/user-4.jpg"
-    },
-    {
-      title: "Savannah Nguyen",
-      desc: "Hi! How are you doing?.....",
-      active: false,
-      hasnotifaction: false,
-      image: "/images/users/user-4.jpg"
-    }
-  ];
+export const messagesData = [
+  {
+    title: "Wade Warren",
+    desc: "Hi! How are you doing?.....",
+    active: true,
+    hasnotifaction: true,
+    notification_count: 1,
+    image: "/images/users/user-1.jpg"
+  },
+  {
+    title: "Savannah Nguyen",
+    desc: "Hi! How are you doing?.....",
+    active: false,
+    hasnotifaction: false,
+    image: "/images/users/user-2.jpg"
+  },
+  {
+    title: "Ralph Edwards",
+    desc: "Hi! How are you doing?.....",
+    active: false,
+    hasnotifaction: true,
+    notification_count: 8,
+    image: "/images/users/user-3.jpg"
+  },
+  {
+    title: "Cody Fisher",
+    desc: "Hi! How are you doing?.....",
+    active: true,
+    hasnotifaction: false,
+    image: "/images/users/user-4.jpg"
+  },
+  {
+    title: "Savannah Nguyen",
+    desc: "Hi! How are you doing?.....",
+    active: false,
+    hasnotifaction: false,
+    image: "/images/users/user-4.jpg"
+  }
+];
 
 
-  
+
 export const activityList = [
   {
     title: "Project start date",

@@ -25,10 +25,10 @@ const EcommercePage = () => {
           <div className="max-w-[180px] relative z-10">
             <h4 className="text-xl font-medium text-primary-foreground dark:text-default-900 mb-2">
               <span className="block font-normal"> {t("widget_title")}</span>
-              <span className="block">Mr. Dianne Russell</span>
+              <span className="block">Mr. Naoual</span>
             </h4>
             <p className="text-sm text-primary-foreground dark:text-default-900 font-normal">
-              {t("widget_desc")}
+              {"Welcome Admin !"}
             </p>
           </div>
           <Image
@@ -41,28 +41,28 @@ const EcommercePage = () => {
           />
         </WelcomeBlock>
         <StatusBlock
-          title={t("revenue_chart_title")}
+          title={"Total Clients"}
           total="3,564"
           iconWrapperClass="bg-info/10"
           chartColor="#00EBFF"
           icon={<ShoppingCart className="w-5 h-5  text-info" />}
         />
         <StatusBlock
-          title={t("sold_chart_title")}
+             title={"Available staff"}
           total="564"
           icon={<Box className="w-5 h-5 text-warning" />}
           iconWrapperClass="bg-warning/10"
           chartColor="#FB8F65"
         />
         <StatusBlock
-          title={t("growth_chart_title")}
+ title={"Avaible materail"}
           total="+5.0%"
           icon={<TrendingUp className="w-5 h-5 text-primary" />}
           iconWrapperClass="bg-primary/10"
           chartColor="#2563eb"
         />
       </div>
-      <div className="grid grid-cols-12 gap-5">
+      {/* <div className="grid grid-cols-12 gap-5">
         <div className="col-span-12 lg:col-span-8">
           <Card>
             <CardContent className="pt-5">
@@ -110,17 +110,9 @@ const EcommercePage = () => {
             </CardContent>
           </Card>
         </div>
-      </div>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
-        <Card>
-          <CardHeader className="flex flex-row items-center gap-1">
-            <CardTitle className="flex-1">{t("customer")}</CardTitle>
-            <DashboardDropdown />
-          </CardHeader>
-          <CardContent>
-            <Customer />
-          </CardContent>
-        </Card>
+      </div> */}
+      <div className="grid lg:grid-cols-1 grid-cols-1 gap-5">
+        
         <Card>
           <CardHeader className="flex flex-row items-center gap-1">
             <CardTitle className="flex-1">
@@ -133,50 +125,7 @@ const EcommercePage = () => {
           </CardContent>
         </Card>
       </div>
-      <div className="grid grid-cols-12  gap-5">
-        <div className="lg:col-span-8 col-span-12">
-          <Card>
-            <CardHeader className="flex flex-row items-center gap-1">
-              <CardTitle className="flex-1">{t("visitors_report")}</CardTitle>
-              <DashboardDropdown />
-            </CardHeader>
-            <CardContent>
-              <VisitorsReportChart height={350} />
-            </CardContent>
-          </Card>
-        </div>
-        <div className="lg:col-span-4 col-span-12">
-          <Card>
-            <CardHeader className="flex flex-row items-center gap-1">
-              <CardTitle className="flex-1">
-                {t("Visitors_by_gender")}
-              </CardTitle>
-              <DashboardDropdown />
-            </CardHeader>
-            <CardContent>
-              <VisitorsChart />
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
-        <MostSales />
-        <Card>
-          <CardHeader className="flex flex-row items-center gap-1">
-            <CardTitle className="flex-1">
-              {t("best_selling_products")}
-            </CardTitle>
-            <DashboardDropdown />
-          </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
-              {products.map((product, index) => (
-                <Product key={index} product={product} />
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      </div>
+      
     </div>
   );
 };

@@ -18,7 +18,7 @@ const DashCodeHeader = async () => {
 
     return (
         <>
-            <HeaderContent>
+            {/* <HeaderContent>
                 <div className=' flex gap-3 items-center'>
                     <HeaderLogo />
                     <SidebarToggle />
@@ -34,7 +34,7 @@ const DashCodeHeader = async () => {
                     <SheetMenu />
                 </div>
             </HeaderContent>
-            <HorizontalMenu />
+            <HorizontalMenu /> */}
         </>
     )
 }

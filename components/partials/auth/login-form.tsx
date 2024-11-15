@@ -60,7 +60,7 @@ const LoginForm = () => {
 
           })
         } else {
-          router.push('/dashboard/analytics');
+          router.push('/dashboard/dash-ecom');
           toast.success("Successfully logged in");
         }
       } catch (err: any) {

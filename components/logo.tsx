@@ -27,7 +27,7 @@ const Logo = () => {
             <DashCodeLogo className="  text-default-900 h-8 w-8 [&>path:nth-child(3)]:text-background [&>path:nth-child(2)]:text-background" />
             {(!config?.collapsed || hovered) && (
                 <h1 className="text-xl font-semibold text-default-900 ">
-                    DashCode
+                    Ocean connecting
                 </h1>
             )}
         </Link>

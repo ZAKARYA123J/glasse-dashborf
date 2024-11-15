@@ -8,12 +8,7 @@ import { Menu } from './menu'
 const DashCodeSidebar = () => {
     return (
         <SidebarContent>
-
-
-
-            <Menu />
-
-
+            <Menu/>
         </SidebarContent>
     )
 }

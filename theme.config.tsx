@@ -16,7 +16,7 @@ const config: DocsThemeConfig = {
     key: "1.0-release",
     text: (
       <a href="/dashboard" target="_blank">
-        🎉 Dashcode
+        🎉 Oceanconnecting
       </a>
     ),
   },
@@ -25,7 +25,7 @@ const config: DocsThemeConfig = {
       <span>
         {new Date().getFullYear()} ©{" "}
         <a href="https://codeshaper.net/" target="_blank">
-          CodeShaper
+        Oceanconnecting
         </a>
         .
       </span>
@@ -42,7 +42,7 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps() {
     return {
-      titleTemplate: "%s – Dashcode",
+      titleTemplate: "%s – Oceanconnecting",
     };
   },
 };

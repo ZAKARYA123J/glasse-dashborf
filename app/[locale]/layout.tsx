@@ -16,7 +16,7 @@ import AuthProvider from "@/providers/auth.provider";
 
 export const metadata: Metadata = {
   title: "Dashcode admin Template",
-  description: "created by codeshaper",
+  description: "created by Oceanconnecting",
 };
 
 export default async function RootLayout({

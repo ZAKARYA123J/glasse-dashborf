@@ -29,7 +29,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
 
-
+// Extend OrdersDataProps to include date and note
 export type OrdersDataProps = {
   user: {
     name: string;
@@ -39,8 +39,11 @@ export type OrdersDataProps = {
   invoice: string;
   price: string;
   status: "paid" | "due" | "pending" | "cancled" | "shipped";
+  date: string; // Added Date field
+  note: string; // Added Note field
 }
 
+// Add columns for Date and Note
 export const columns: ColumnDef<OrdersDataProps>[] = [
   {
     accessorKey: "user",
@@ -84,7 +87,7 @@ export const columns: ColumnDef<OrdersDataProps>[] = [
         "paid": "bg-success/10 text-success",
         "due": "bg-warning/10 text-warning",
         "pending": "bg-primary/10 text-primary",
-        "cancled": "bg-destructive/10 text-destructive",
+        "canceled": "bg-destructive/10 text-destructive",
         "shipped": "bg-warning/10 text-warning",
       }
       const className = statusClass[status] || "bg-default/10 text-default";
@@ -92,7 +95,21 @@ export const columns: ColumnDef<OrdersDataProps>[] = [
         <Badge className={cn("px-3 min-w-[90px] justify-center py-1 rounded-full",className)}>{status}</Badge>
       )
     }
-  }
+  },
+  {
+    accessorKey: "date",
+    header: "Date",
+    cell: ({ row }) => (
+      <span>{row.getValue("date")}</span>
+    ),
+  },
+  {
+    accessorKey: "note",
+    header: "Note",
+    cell: ({ row }) => (
+      <span>{row.getValue("note")}</span>
+    ),
+  },
 ]
 
 const RecentOrderTable = () => {
@@ -208,4 +225,3 @@ const RecentOrderTable = () => {
 }
 
 export default RecentOrderTable;
-

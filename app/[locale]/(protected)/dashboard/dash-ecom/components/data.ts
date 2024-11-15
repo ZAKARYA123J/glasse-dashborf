@@ -10,6 +10,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#324567",
     price: "$90.99",
     status: "paid",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -20,6 +22,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$78.65",
     status: "due",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -30,6 +34,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$78.65",
     status: "pending",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -40,6 +46,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$38.65",
     status: "cancled",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -50,6 +58,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$178.65",
     status: "shipped",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -60,6 +70,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$74.65",
     status: "cancled",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -70,6 +82,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#324567",
     price: "$90.99",
     status: "paid",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -80,6 +94,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$78.65",
     status: "due",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -90,6 +106,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$78.65",
     status: "pending",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -100,6 +118,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$38.65",
     status: "cancled",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -110,6 +130,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$178.65",
     status: "shipped",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -120,6 +142,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$74.65",
     status: "cancled",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -130,6 +154,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#324567",
     price: "$90.99",
     status: "paid",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -140,6 +166,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$78.65",
     status: "due",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -150,6 +178,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$78.65",
     status: "pending",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -160,6 +190,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$38.65",
     status: "cancled",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -170,6 +202,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$178.65",
     status: "shipped",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -180,6 +214,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$74.65",
     status: "cancled",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -190,6 +226,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#324567",
     price: "$90.99",
     status: "paid",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -200,6 +238,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$78.65",
     status: "due",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -210,6 +250,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$78.65",
     status: "pending",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -220,6 +262,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$38.65",
     status: "cancled",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -230,6 +274,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$178.65",
     status: "shipped",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
   {
     user: {
@@ -240,6 +286,8 @@ export const data:OrdersDataProps[] = [
     invoice: "#4224",
     price: "$74.65",
     status: "cancled",
+    date: "2024-11-12", // Add date field
+    note: "Urgent delivery", // Add note field
   },
 ];
 

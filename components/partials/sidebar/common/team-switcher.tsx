@@ -49,24 +49,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useMenuHoverConfig } from "@/hooks/use-menu-hover";
 
 const groups = [
-    {
-        label: "Personal Account",
-        teams: [
-            {
-                label: "Designing Workspace",
-                value: "personal",
-            },
-        ],
-    },
+  
     {
         label: "Teams",
         teams: [
             {
-                label: "Core Workspace",
-                value: "acme-inc",
-            },
-            {
-                label: "Dev.Workspace",
+                label: "Dev",
                 value: "monsters",
             },
         ],

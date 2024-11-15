@@ -13,11 +13,11 @@ const ReactTablePage = () => {
             <ExampleOne />
           </CardContent>
         </Card>
-        <Card>
+        {/* <Card>
           <CardContent className="p-0">
             <ExampleTwo />
           </CardContent>
-        </Card>
+        </Card> */}
       </div>
     </div>
   );

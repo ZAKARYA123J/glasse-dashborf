@@ -144,7 +144,7 @@ const CrmPage = () => {
               </div>
             </CardContent>
           </Card>
-          <Card>
+          {/* <Card>
             <CardHeader className="flex-row flex-wrap gap-2">
               <CardTitle className="flex-1 whitespace-nowrap">
                 {t("deal_distribution_by_stage")}
@@ -154,7 +154,7 @@ const CrmPage = () => {
             <CardContent>
               <DealDistributionsChart />
             </CardContent>
-          </Card>
+          </Card> */}
         </div>
         <div className="col-span-12 lg:col-span-4 space-y-5">
           <Card>
@@ -179,7 +179,7 @@ const CrmPage = () => {
             </CardContent>
           </Card>
 
-          <Card>
+          {/* <Card>
             <CardHeader className="flex-row gap-3">
               <CardTitle className="flex-1">
                 {t("trends_calculation")}
@@ -189,16 +189,16 @@ const CrmPage = () => {
             <CardContent>
               <TrendsCalculationChart />
             </CardContent>
-          </Card>
+          </Card> */}
         </div>
       </div>
-      <div>
+      {/* <div>
         <Card>
           <CardContent className="px-0">
             <TransactionsTable />
           </CardContent>
         </Card>
-      </div>
+      </div> */}
     </div>
   );
 };

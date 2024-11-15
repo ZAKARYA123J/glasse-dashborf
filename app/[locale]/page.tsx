@@ -15,7 +15,7 @@ const Login = ({ params: { locale } }: { params: { locale: string } }) => {
           >
             <div className="max-w-[520px] pt-20 ps-20 ">
               <Link href="/" className="mb-6 inline-block">
-                <Logo />
+                <Logo/>
               </Link>
               <h4>
                 Unlock your Project
@@ -67,9 +67,9 @@ const Login = ({ params: { locale } }: { params: { locale: string } }) => {
                   </Link>
                 </div>
               </div>
-              <div className="text-xs font-normal text-default-500  z-[999] pb-10 text-center">
+              {/* <div className="text-xs font-normal text-default-500  z-[999] pb-10 text-center">
                 <Copyright />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
