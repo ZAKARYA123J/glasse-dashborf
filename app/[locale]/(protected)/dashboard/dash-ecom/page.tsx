@@ -12,7 +12,7 @@ import RecentOrderTable from "./components/recent-order-table";
 import VisitorsReportChart from "./components/visitors-report";
 import VisitorsChart from "./components/visitors-chart";
 import MostSales from "./components/most-sales";
-import { products } from "./components/data";
+;
 import Product from "./components/product";
 import { useTranslations } from "next-intl";
 

@@ -22,8 +22,6 @@ const wait = () => new Promise((resolve) => setTimeout(resolve, 1000));
 interface CalendarViewProps {
   events: CalendarEvent[];
   categories: CalendarCategory[];
-
-
 }
 
 const CalendarView = ({ events, categories }: CalendarViewProps) => {
@@ -136,7 +134,8 @@ const t = useTranslations("CalendarApp")
   return (
     <>
       <div className="grid grid-cols-12 gap-6 divide-x  divide-border">
-        <Card className="col-span-12 lg:col-span-4 2xl:col-span-3  pb-5">
+        
+      <Card className="col-span-12 lg:col-span-6 2xl:col-span-3 col-start-7 lg:col-start-7 2xl:col-start-10 pb-5">
           <CardContent className="p-0">
             <CardHeader className="border-none mb-2 pt-5">
               <Button
@@ -144,7 +143,7 @@ const t = useTranslations("CalendarApp")
                 className="dark:bg-background dark:text-foreground"
               >
                 <Plus className="w-4 h-4   me-1" />
-                {t("addEvent")}
+                Insert Quotations
               </Button>
             </CardHeader>
             <div className="px-3">
@@ -166,10 +165,10 @@ const t = useTranslations("CalendarApp")
                 <ExternalDraggingevent key={event.id} event={event} />
               ))}
             </div>
-            <div className="py-4 text-default-800  font-semibold text-xs uppercase mt-4 mb-2 px-4">
+            {/* <div className="py-4 text-default-800  font-semibold text-xs uppercase mt-4 mb-2 px-4">
             {t("filter")}
-            </div>
-            <ul className="space-y-3 px-4">
+            </div> */}
+            {/* <ul className="space-y-3 px-4">
               <li className=" flex gap-3">
                 <Checkbox
                   checked={selectedCategory?.length === categories?.length}
@@ -194,11 +193,11 @@ const t = useTranslations("CalendarApp")
                   <Label htmlFor={category.label}>{category.label}</Label>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </CardContent>
         </Card>
 
-        <Card className="col-span-12 lg:col-span-8 2xl:col-span-9  pt-5">
+        {/* <Card className="col-span-12 lg:col-span-8 2xl:col-span-9  pt-5">
           <CardContent className="dashcode-app-calendar">
             <FullCalendar
               plugins={[
@@ -227,7 +226,7 @@ const t = useTranslations("CalendarApp")
               initialView="dayGridMonth"
             />
           </CardContent>
-        </Card>
+        </Card> */}
       </div>
       <EventModal
         open={sheetOpen}

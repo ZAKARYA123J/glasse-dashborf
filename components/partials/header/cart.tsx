@@ -108,8 +108,6 @@ export function Cart() {
                             </div>
                         )
                 }
-
-
                 <SheetFooter className="flex-none block border-t border-default-100 p-6">
                     <div className="flex">
                         <div className="flex-1  text-base font-medium leading-none text-default-900">Subtotal</div>
