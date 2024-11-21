@@ -23,7 +23,7 @@ interface CalendarViewProps {
   events: CalendarEvent[];
   categories: CalendarCategory[];
 }
-
+import { Link, usePathname } from "@/components/navigation";
 const CalendarView = ({ events, categories }: CalendarViewProps) => {
   const [selectedCategory, setSelectedCategory] = useState<string[] | null>(null);
   const [selectedEventDate, setSelectedEventDate] = useState<Date | null>(null);
@@ -138,13 +138,14 @@ const t = useTranslations("CalendarApp")
       <Card className="col-span-12 lg:col-span-6 2xl:col-span-3 col-start-7 lg:col-start-7 2xl:col-start-10 pb-5">
           <CardContent className="p-0">
             <CardHeader className="border-none mb-2 pt-5">
+              <Link href={"/app/devis"}>
               <Button
-                onClick={handleDateClick}
                 className="dark:bg-background dark:text-foreground"
               >
                 <Plus className="w-4 h-4   me-1" />
                 Insert Quotations
               </Button>
+              </Link>
             </CardHeader>
             <div className="px-3">
               <Calendar
