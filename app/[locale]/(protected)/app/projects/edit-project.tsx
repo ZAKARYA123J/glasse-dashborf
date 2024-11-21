@@ -62,8 +62,6 @@ const assigneeOptions: Option[] = [
   { value: "rakibul", label: "Rakibul Islam", image: "/images/avatar/av-3.svg" },
   { value: "pritom", label: "Pritom Miha", image: "/images/avatar/av-4.svg" },
 ];
-
-
 const EditProject = ({ open, setOpen }: EditProjectProps) => {
   const [startDate, setStartDate] = useState<Date>(new Date());
   const [endDate, setEndtDate] = useState<Date>(new Date());

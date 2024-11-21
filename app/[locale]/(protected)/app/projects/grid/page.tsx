@@ -21,7 +21,7 @@ const ProjectGrid = async () => {
                             </Avatar>
                             <h3 className="text-default-900 text-lg font-medium max-w-[210px] truncate text-center capitalize ">{title}</h3>
                         </div>
-                        <ProjectAction />
+                        <ProjectAction/>
                     </CardHeader>
                     <CardContent>
                         <div className="text-default-600 text-sm">{desc}</div>

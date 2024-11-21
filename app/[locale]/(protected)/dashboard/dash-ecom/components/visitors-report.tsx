@@ -18,7 +18,6 @@ const VisitorsReportChart = ({
   seriesData =[90, 70, 85, 60, 80, 70, 90, 75, 60, 80]
 
 }: VisitorsReportChartProps) => {
-
   const { theme: mode } = useTheme();
   const series = [
     {

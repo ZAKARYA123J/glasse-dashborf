@@ -39,16 +39,7 @@ export type DeviDataProps = {
   email: string;
   VotreFonction?: string;
   Adress: string;
-  codePostall: string;
-  message: string;
-  etage?: string;
-  surfaceId?: number;
-  surface?: {
-    id: number;
-    description: string; // Assuming surface includes a description
-  };
-  status?: string; // Adjust based on your enum values
-  Facture?: string;
+
 };
 
 
@@ -84,43 +75,14 @@ export const columns: ColumnDef<DeviDataProps>[] = [
     header: "City",
     cell: ({ row }) => <span>{row.getValue("ville") || "N/A"}</span>,
   },
-  {
-    accessorKey: "email",
-    header: "Email",
-    cell: ({ row }) => <span>{row.getValue("email")}</span>,
-  },
+
   {
     accessorKey: "VotreFonction",
     header: "Function",
     cell: ({ row }) => <span>{row.getValue("VotreFonction") || "N/A"}</span>,
   },
-  {
-    accessorKey: "Adress",
-    header: "Address",
-    cell: ({ row }) => <span>{row.getValue("Adress")}</span>,
-  },
-  {
-    accessorKey: "codePostall",
-    header: "Postal Code",
-    cell: ({ row }) => <span>{row.getValue("codePostall")}</span>,
-  },
-  {
-    accessorKey: "message",
-    header: "Message",
-    cell: ({ row }) => <span>{row.getValue("message")}</span>,
-  },
-  {
-    accessorKey: "etage",
-    header: "Floor",
-    cell: ({ row }) => <span>{row.getValue("etage") || "N/A"}</span>,
-  },
-  {
-    accessorKey: "surface",
-    header: "Surface Description",
-    cell: ({ row }) => (
-      <span>{row.original.surface ? row.original.surface.description : "N/A"}</span>
-    ),
-  },
+
+
   {
     accessorKey: "status",
     header: "Status",
@@ -130,11 +92,7 @@ export const columns: ColumnDef<DeviDataProps>[] = [
       </Badge>
     ),
   },
-  {
-    accessorKey: "Facture",
-    header: "Facture",
-    cell: ({ row }) => <span>{row.getValue("Facture") || "N/A"}</span>,
-  },
+
 ];
 
 

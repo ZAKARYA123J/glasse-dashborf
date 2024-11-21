@@ -6,7 +6,6 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Link, usePathname } from "@/components/navigation";
 import { getProjectNav } from "./data";
-
 const ProjectWrapper = ({ children }: { children: React.ReactNode }) => {
     const [open, setOpen] = useState<boolean>(false);
     const pathname = usePathname();
@@ -45,13 +44,14 @@ const ProjectWrapper = ({ children }: { children: React.ReactNode }) => {
                         <Filter className="w-3.5 h-3.5 me-1" />
                         <span>On Going</span>
                     </Button>
+                    <Link href={"/app/devis"}>
                     <Button
                         className="flex-none"
-                        onClick={() => setOpen(true)}
                     >
                         <Plus className="w-4 h-4 me-1" />
-                        <span>Add Project</span>
+                        <span>Add devis</span>
                     </Button>
+                    </Link>
                 </div>
             </div>
             {children}

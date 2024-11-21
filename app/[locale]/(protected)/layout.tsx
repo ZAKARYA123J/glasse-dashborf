@@ -23,8 +23,6 @@ const layout = async ({ children }: { children: React.ReactNode }) => {
             <DashCodeFooter />
         </LayoutProvider>
     )
-
-
 };
 
 export default layout;

@@ -12,9 +12,9 @@ const PageTitle = ({ title, className }: { title?: string, className?: string })
     return (
         <div className={cn('flex flex-wrap gap-4 items-center justify-between', className)}>
             <div className="text-2xl font-medium text-default-800 capitalize">
-                {title ? title : name ? name : null}
+                {/* {title ? title : name ? name : null} */}
             </div>
-            <DateRangePicker />
+            {/* <DateRangePicker /> */}
         </div>
     )
 }

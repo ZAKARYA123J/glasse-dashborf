@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import { Button } from "@/components/ui/button";
 export default function Page() {
   const [formData, setFormData] = useState({
     nameEntreprise: "",
@@ -11,7 +11,7 @@ export default function Page() {
     codePostall: "",
     message: "",
     etage: "",
-    surfaceId: "",
+    surfaceId: 1,
     status: "",
     numberPhon: "",
     ville: "",
@@ -26,7 +26,7 @@ export default function Page() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/api/submit", {
+      const response = await fetch("https://ocean-dashbord-elzu.vercel.app/api/Devis", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -45,7 +45,7 @@ export default function Page() {
           codePostall: "",
           message: "",
           etage: "",
-          surfaceId: "",
+          surfaceId: 1,
           status: "",
           numberPhon: "",
           ville: "",
@@ -61,12 +61,12 @@ export default function Page() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 ">
       <form
         onSubmit={handleSubmit}
         className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl"
       >
-        <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+        <h2 className="text-2xl font-semibold mb-4 text-gray-800 ">
           Create Devi Form
         </h2>
 
@@ -74,7 +74,7 @@ export default function Page() {
         <div className="grid grid-cols-2 gap-4 mb-4">
           <div className="w-full">
             <label
-              className="block text-gray-700 dark:text-gray-300 mb-2"
+              className="block text-gray-700  mb-2"
               htmlFor="nameEntreprise"
             >
               Enterprise Name
@@ -85,7 +85,7 @@ export default function Page() {
               type="text"
               value={formData.nameEntreprise}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300  color-black dark:border-gray-600 bg-white"
             />
           </div>
 
@@ -291,14 +291,15 @@ export default function Page() {
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
             />
           </div>
+            
         </div>
-
-        <button
+        <Button
           type="submit"
-          className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300 dark:bg-blue-600 dark:hover:bg-blue-700"
+        
         >
-          Submit
-        </button>
+          Insert
+        </Button>
+     
       </form>
     </div>
   );
