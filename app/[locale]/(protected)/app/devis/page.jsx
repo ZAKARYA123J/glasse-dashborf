@@ -1,6 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 export default function Page() {
   const [formData, setFormData] = useState({
     nameEntreprise: "",
@@ -8,15 +10,36 @@ export default function Page() {
     email: "",
     VotreFonction: "",
     Adress: "",
-    codePostall: "",
+    codePostall: "8000",
     message: "",
     etage: "",
-    surfaceId: 1,
+    surfaceId: "",
     status: "",
     numberPhon: "",
     ville: "",
     datecalendrier: "",
   });
+
+  const [surfaceOptions, setSurfaceOptions] = useState([]);
+
+  // Fetch surface options from API
+  useEffect(() => {
+    const fetchSurfaceOptions = async () => {
+      try {
+        const response = await fetch("https://ocean-dashbord-elzu.vercel.app/api/surface");
+        if (response.ok) {
+          const data = await response.json();
+          setSurfaceOptions(data); // Assuming `data` is an array of surfaces
+        } else {
+          console.error("Failed to fetch surface options");
+        }
+      } catch (error) {
+        console.error("Error fetching surface options:", error);
+      }
+    };
+
+    fetchSurfaceOptions();
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -45,7 +68,7 @@ export default function Page() {
           codePostall: "",
           message: "",
           etage: "",
-          surfaceId: 1,
+          surfaceId: "",
           status: "",
           numberPhon: "",
           ville: "",
@@ -59,8 +82,8 @@ export default function Page() {
       alert("An error occurred while submitting the form.");
     }
   };
+    return (
 
-  return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 ">
       <form
         onSubmit={handleSubmit}
@@ -73,81 +96,79 @@ export default function Page() {
         {/* Horizontal Inputs for all fields */}
         <div className="grid grid-cols-2 gap-4 mb-4">
           <div className="w-full">
-            <label
+            <Label
               className="block text-gray-700  mb-2"
               htmlFor="nameEntreprise"
             >
               Enterprise Name
-            </label>
-            <input
+            </Label>
+            <Input
               id="nameEntreprise"
               name="nameEntreprise"
               type="text"
               value={formData.nameEntreprise}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300  color-black dark:border-gray-600 bg-white"
+              
             />
           </div>
 
           <div className="w-full">
-            <label
-              className="block text-gray-700 dark:text-gray-300 mb-2"
+            <Label
+              
               htmlFor="namePersone"
             >
               Person Name
-            </label>
-            <input
+            </Label>
+            <Input
               id="namePersone"
               name="namePersone"
               type="text"
               value={formData.namePersone}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
             />
           </div>
 
           <div className="w-full">
-            <label
-              className="block text-gray-700 dark:text-gray-300 mb-2"
+            <Label
+             
               htmlFor="email"
             >
               Email
-            </label>
-            <input
+            </Label>
+            <Input
               id="email"
               name="email"
               type="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
+              
             />
           </div>
 
           <div className="w-full">
-            <label
-              className="block text-gray-700 dark:text-gray-300 mb-2"
+            <Label
               htmlFor="VotreFonction"
             >
               Your Function
-            </label>
-            <input
+            </Label>
+            <Input
               id="VotreFonction"
               name="VotreFonction"
               type="text"
               value={formData.VotreFonction}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
+             
             />
           </div>
 
           <div className="w-full">
-            <label
-              className="block text-gray-700 dark:text-gray-300 mb-2"
+            <Label
+             
               htmlFor="Adress"
             >
               Address
-            </label>
-            <input
+            </Label>
+            <Input
               id="Adress"
               name="Adress"
               type="text"
@@ -157,31 +178,16 @@ export default function Page() {
             />
           </div>
 
-          <div className="w-full">
-            <label
-              className="block text-gray-700 dark:text-gray-300 mb-2"
-              htmlFor="codePostall"
-            >
-              Postal Code
-            </label>
-            <input
-              id="codePostall"
-              name="codePostall"
-              type="number"
-              value={formData.codePostall}
-              onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
-            />
-          </div>
+      
 
           <div className="w-full">
-            <label
-              className="block text-gray-700 dark:text-gray-300 mb-2"
+            <Label
+             
               htmlFor="message"
             >
               Message
-            </label>
-            <textarea
+            </Label>
+            <Input
               id="message"
               name="message"
               value={formData.message}
@@ -191,13 +197,13 @@ export default function Page() {
           </div>
 
           <div className="w-full">
-            <label
-              className="block text-gray-700 dark:text-gray-300 mb-2"
+            <Label
+              
               htmlFor="etage"
             >
               Floor
-            </label>
-            <input
+            </Label>
+            <Input
               id="etage"
               name="etage"
               type="number"
@@ -206,49 +212,52 @@ export default function Page() {
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
             />
           </div>
-
           <div className="w-full">
-            <label
-              className="block text-gray-700 dark:text-gray-300 mb-2"
-              htmlFor="surfaceId"
-            >
-              Surface ID
-            </label>
-            <input
+            <Label htmlFor="surfaceId">Surface</Label>
+            <select
               id="surfaceId"
               name="surfaceId"
-              type="text"
               value={formData.surfaceId}
               onChange={handleChange}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
-            />
+            >
+              <option value="" disabled>
+                Select a surface
+              </option>
+              {surfaceOptions.map((surface) => (
+                <option key={surface.id} value={surface.id}>
+                  {surface.valeur}
+                </option>
+              ))}
+            </select>
           </div>
 
+
           <div className="w-full">
-            <label
-              className="block text-gray-700 dark:text-gray-300 mb-2"
-              htmlFor="status"
-            >
-              Status
-            </label>
-            <input
+            <Label htmlFor="status">Status</Label>
+            <select
               id="status"
               name="status"
-              type="text"
               value={formData.status}
               onChange={handleChange}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
-            />
+            >
+              <option value="PENDING">PENDING</option>
+              <option value="CONFIRMED">CONFIRMED</option>
+              <option value="REJECTED">REJECTED</option>
+              <option value="COMPLETED">COMPLETED</option>
+            </select>
           </div>
 
+
           <div className="w-full">
-            <label
+            <Label
               className="block text-gray-700 dark:text-gray-300 mb-2"
               htmlFor="numberPhon"
             >
               Phone Number
-            </label>
-            <input
+            </Label>
+            <Input
               id="numberPhon"
               name="numberPhon"
               type="number"
@@ -259,13 +268,13 @@ export default function Page() {
           </div>
 
           <div className="w-full">
-            <label
-              className="block text-gray-700 dark:text-gray-300 mb-2"
+            <Label
+            
               htmlFor="ville"
             >
               City
-            </label>
-            <input
+            </Label>
+            <Input
               id="ville"
               name="ville"
               type="text"
@@ -276,13 +285,12 @@ export default function Page() {
           </div>
 
           <div className="w-full">
-            <label
-              className="block text-gray-700 dark:text-gray-300 mb-2"
+            <Label
               htmlFor="datecalendrier"
             >
               Date
-            </label>
-            <input
+            </Label>
+            <Input
               id="datecalendrier"
               name="datecalendrier"
               type="date"

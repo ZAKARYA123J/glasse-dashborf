@@ -14,7 +14,6 @@ const CopyCustomizer = () => {
             code={code}
             variant="ghost"
             className="  relative -top-1.5 [&_svg]-h-4 [&_svg]:w-4"
-
         />
     )
 }

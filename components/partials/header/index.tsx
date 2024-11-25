@@ -11,8 +11,6 @@ import { SheetMenu } from '@/components/partials/sidebar/menu/sheet-menu'
 import HorizontalMenu from "./horizontal-menu"
 import LocalSwitcher from './locale-switcher'
 import HeaderLogo from "./header-logo"
-
-
 const DashCodeHeader = async () => {
 
 
