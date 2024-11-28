@@ -24,7 +24,6 @@ export type Config = {
   headerTheme: string,
   sidebarBgImage?: string
   radius: number
-
 }
 export const defaultConfig: Config = {
   collapsed: false,

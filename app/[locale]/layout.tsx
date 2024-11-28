@@ -15,7 +15,7 @@ import DirectionProvider from "@/providers/direction-provider";
 import AuthProvider from "@/providers/auth.provider";
 
 export const metadata: Metadata = {
-  title: "Dashcode admin Template",
+  title: "Oceanconnecting admin Template",
   description: "created by Oceanconnecting",
 };
 

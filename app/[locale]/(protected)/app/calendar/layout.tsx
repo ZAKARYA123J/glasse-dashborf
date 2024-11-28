@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Calender",
+  title: "Oceanconnecting",
 };
 
 const Layout = ({ children }: { children: React.ReactNode }) => {

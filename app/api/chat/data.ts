@@ -14,7 +14,6 @@ import avatar8 from "@/public/images/users/user-2.jpg";
 import avatar9 from "@/public/images/users/user-3.jpg";
 import avatar10 from "@/public/images/users/user-4.jpg";
 import avatar11 from "@/public/images/users/user-5.jpg";
-import { faker } from "@faker-js/faker";
 export const profileUser = {
   id: "e2c1a571-5f7e-4f56-9020-13f98b0eaba2",
   avatar: avatar1,

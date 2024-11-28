@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata:Metadata={
-  title: 'CRM',
-  description: 'CRM Dashboard Description'
+  title: 'Oceanconnecting',
+  description: 'Oceanconnecting Dashboard '
 }
 const Layout = ({children}: {children: React.ReactNode}) => {
   return (

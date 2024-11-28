@@ -55,11 +55,11 @@ const CrmPage: React.FC = () => {
             <CardContent>
               <ul className="divide-y divide-default-100 dark:divide-default-300">
               <li className="text-xs font-semibold uppercase text-default-700  py-2.5 px-2">
-    <div className="flex justify-between">
-      <span>ID</span>
-      <span>Valeur</span>
-    </div>
-  </li>
+         <div className="flex justify-between">
+          <span>ID</span>
+         <span>Valeur</span>
+      </div>
+       </li>
                 {campaigns.map((item, i) => (
                   <li
                     key={`campaign-${i}`}

@@ -12,7 +12,6 @@ import {
 import {
     Collapsible,
     CollapsibleContent,
-    CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";

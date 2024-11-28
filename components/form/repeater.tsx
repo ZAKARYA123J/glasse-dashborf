@@ -43,7 +43,6 @@ const Repeater = () => {
         <div className="mb-6 text-default-600 text-xs font-medium uppercase">
           Items info-500
         </div>
-
         <div>
           <form onSubmit={handleSubmit(onSubmit)}>
             {fields.map((item, index) => (

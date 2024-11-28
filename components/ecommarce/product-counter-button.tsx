@@ -10,14 +10,12 @@ const ProductCounterButton = ({ className }: { className?: string }) => {
         if (count < 10) {
             setCount(count + 1)
         }
-
     }
     const handleDecreaseQuantity = () => {
-
         if (count > 0) {
             setCount(count - 1)
         }
-    }
+}
     return (
         <div className={cn('flex-1 h-8 md:max-w-[112px] max-w-[95px] flex border   delay-150 ease-in-out  divide-x-[1px] rtl:divide-x-reverse text-sm font-normal divide-border  rounded', className)}>
             <button className="md:px-3 px-2 disabled:cursor-not-allowed" onClick={handleDecreaseQuantity}

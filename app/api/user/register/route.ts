@@ -4,18 +4,14 @@ import avatar3 from "@/public/images/avatar/avatar-3.png";
 export async function POST(request: NextRequest, response: any) {
   try {
     let reqBody = await request.json();
-
     const foundUser = user.find((u) => u.email === reqBody.email);
-
     if (foundUser) {
       return NextResponse.json({
         status: "fail",
         message: "User already exists",
       });
     }
-
     reqBody.id = user.length + 1;
-
     reqBody.image = avatar3;
     user.push(reqBody);
     return NextResponse.json({

@@ -15,7 +15,6 @@ interface OrdersnBlockProps {
   height?: number,
   percentageContent?: React.ReactNode
 }
-
 const OrdersBlock = ({
   series = [15, 30, 15, 30, 20, 35],
   chartColor = "#0f172a",

@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import ProjectWrapper from "./project-wrapper";
 export const metadata: Metadata = {
-  title: 'Projects',
-  description: 'Projects Page'
+  title: 'Oceanconnecting',
+  description: 'Oceanconnecting Page'
 }
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
