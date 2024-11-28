@@ -30,7 +30,6 @@ const defaultSeries = [
 const DealDistributionsChart = ({ series = defaultSeries, height = 410 }: DealsDistributionChartProps) => {
   const [config] = useConfig();
   const { theme: mode } = useTheme();
-
   const options: any = {
     chart: {
       toolbar: {

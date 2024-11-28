@@ -146,7 +146,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                                 </Avatar>
                                 <div className="flex-1 text-start w-[100px]">
 
-                                    <div className=" text-sm  font-semibold text-default-900">Codeshaper</div>
+                                    <div className=" text-sm  font-semibold text-default-900">Ocean developers</div>
                                     <div className=" text-xs font-normal text-default-500 dark:text-default-700 truncate ">{selectedTeam.label}</div>
 
                                 </div>
