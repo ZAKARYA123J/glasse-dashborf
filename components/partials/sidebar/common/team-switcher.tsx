@@ -84,17 +84,10 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
     )
     const isDesktop = useMediaQuery("(min-width: 1280px)")
     if (config.showSwitcher === false || config.sidebar === 'compact') return null
-
-
     return (
         <Dialog open={showNewTeamDialog} onOpenChange={setShowNewTeamDialog}>
             <Popover open={open} onOpenChange={setOpen}>
-
-
                 <PopoverTrigger asChild>
-
-
-
                     <motion.div
                         key={(config.collapsed && !hovered) ? "collapsed" : "expanded"}
                         initial={{ scale: 0.9 }}
@@ -120,7 +113,6 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                                     alt={selectedTeam.label}
                                     className="grayscale"
                                 />
-
                                 <AvatarFallback>{session?.user?.name?.charAt(0)}</AvatarFallback>
                             </Avatar>
                         </Button> : <Button
@@ -130,8 +122,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                             fullWidth
                             aria-expanded={open}
                             aria-label="Select a team"
-                            className={cn("  h-auto py-3 md:px-3 px-3 justify-start dark:border-secondary ring-offset-sidebar", className)}
-                        >
+                            className={cn("  h-auto py-3 md:px-3 px-3 justify-start dark:border-secondary ring-offset-sidebar", className)}>
                             <div className=" flex  gap-2 flex-1 items-center">
                                 <Avatar className=" flex-none h-[38px] w-[38px]">
                                     <AvatarImage
@@ -141,7 +132,6 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                                         alt={selectedTeam.label}
                                         className="grayscale"
                                     />
-
                                     <AvatarFallback>{session?.user?.name?.charAt(0)}</AvatarFallback>
                                 </Avatar>
                                 <div className="flex-1 text-start w-[100px]">
@@ -151,12 +141,11 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
 
                                 </div>
                                 <div className="">
-                                    <ChevronsUpDown className="ml-auto h-5 w-5 shrink-0  text-default-500 dark:text-default-700" />
+                                     <ChevronsUpDown className="ml-auto h-5 w-5 shrink-0  text-default-500 dark:text-default-700" />
                                 </div>
                             </div>
                         </Button>}
                     </motion.div>
-
                 </PopoverTrigger>
                 <PopoverContent className="w-[200px] p-0">
                     <Command>

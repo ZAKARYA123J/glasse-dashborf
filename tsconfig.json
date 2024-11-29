@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/dascode-logo.jsx", "app/[locale]/(protected)/app/devis/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/dascode-logo.jsx", "app/[locale]/(protected)/app/devis/page.jsx", "app/[locale]/(protected)/app/[id]/page.jsx"],
   "exclude": ["node_modules"]
 }

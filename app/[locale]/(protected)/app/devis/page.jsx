@@ -87,7 +87,7 @@ export default function Page() {
     <div className="min-h-screen flex items-center justify-center bg-gray-100 ">
       <form
         onSubmit={handleSubmit}
-        className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl"
+        className=" dark:bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl"
       >
         <h2 className="text-2xl font-semibold mb-4 text-gray-800 ">
           Create Devi Form

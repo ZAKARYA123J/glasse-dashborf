@@ -43,7 +43,7 @@ const InvoicePreviewPage = () => {
               <Logo />
 
               <div className="text-default-500 font-normal leading-5 mt-4 text-sm">
-                Dashcode <br />
+             
                 House# 339, New DOHS, Mohakhali, <br />
                 Dhaka - 1206, Bangladesh
                 <div className="flex space-x-2 mt-2 leading-[1] rtl:space-x-reverse">
