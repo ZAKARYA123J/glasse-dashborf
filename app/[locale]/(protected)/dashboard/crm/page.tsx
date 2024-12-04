@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import DashboardDropdown from "@/components/dashboard-dropdown";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
-
+import { Eye, SquarePen, Trash2 } from "lucide-react";
+import Link from "next/link";
 interface Campaign {
   id: string;
-  valeur: string;
-  
+  valeur: string; 
 }
 
 const CrmPage: React.FC = () => {
@@ -58,6 +58,9 @@ const CrmPage: React.FC = () => {
          <div className="flex justify-between">
           <span>ID</span>
          <span>Valeur</span>
+         <span>
+          Actions
+         </span>
       </div>
        </li>
                 {campaigns.map((item, i) => (
@@ -68,6 +71,20 @@ const CrmPage: React.FC = () => {
                     <div className="flex justify-between">
                       <span>{item.id}</span>
                       <span>{item.valeur}</span>
+                      <span>
+                      <Link href={`/en/app/}`} className='flex items-center '>
+        <SquarePen className="w-4 h-4 me-1" />
+        Edit
+    </Link>
+    <Link href={`/`} className='flex items-center '>
+                            <Eye className="w-4 h-4 me-1" />
+                            View
+                        </Link>
+    <Link href={`/`} className='flex items-center '>
+                            <Trash2 className="w-4 h-4 me-1" />
+                            Delete
+                        </Link>
+                      </span>
                       
                     </div>
                   </li>
